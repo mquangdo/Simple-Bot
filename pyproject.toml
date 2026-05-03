@@ -1,0 +1,13 @@
+[project]
+name = "simple-bot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langgraph>=1.1.10",
+    "langchain-community>=0.3.0",
+    "tavily-python>=0.5.0",
+    "langchain-tavily>=0.2.18",
+    "langchain-groq>=1.1.2",
+]
