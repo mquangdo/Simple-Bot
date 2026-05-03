@@ -1,0 +1,13 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+RUN pip install uv && apt-get update && apt-get upgrade -y
+
+COPY . .
+
+RUN uv sync --frozen
+
+EXPOSE 8501
+
+CMD ["uv", "run", "streamlit", "run", "frontend/ui.py", "--server.port=8501", "--server.address=0.0.0.0"]

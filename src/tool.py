@@ -7,7 +7,7 @@ from langgraph.graph.message import add_messages
 from langgraph.graph import StateGraph, END
 from langgraph.prebuilt import ToolNode
 from pydantic import BaseModel, Field
-from schema import ArgWebSearchSchema
+from src.schema import ArgWebSearchSchema
 from dotenv import load_dotenv
 
 load_dotenv()
